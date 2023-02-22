@@ -1,0 +1,53 @@
+:root {
+    /* Colors */
+    --clr-primary: hsl(25, 97%, 53%);
+    --ntrl-100: hsl(0, 0%, 100%);
+    --ntrl-200: hsl(217, 12%, 63%);
+    --ntrl-300: hsl(216, 12%, 54%);
+    --ntrl-400: hsl(213, 19%, 18%);
+    --ntrl-500: hsl(216, 12%, 8%);
+
+    /* Font */
+    --ff-primary: Overpass, sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font: 0.938rem var(--ff-primary);
+    font-weight: var(--fw-regular);
+    color: var(--ntrl-200);
+    background-color: var(--ntrl-500);
+    min-height: 100vh;
+}
+
+input, button {
+    font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--fw-bold);
+    color: var(--ntrl-100);
+}
+
+.flex {
+    display: flex;
+}
+
+.flow {
+    flex-flow: column wrap;
+}
+
+.xy-center {
+    justify-content: center;
+    align-items: center;
+}
